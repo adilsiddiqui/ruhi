@@ -1,0 +1,38 @@
+/*Font Css*/
+
+@font-face {
+    font-family: 'BlackJackRegular';
+    src: url('../font/blackjar.eot');
+    src: url('../font/blackjar.eot') format('embedded-opentype'),
+         url('../font/blackjar.woff') format('woff'),
+         url('../font/blackjar.ttf') format('truetype'),
+         url('../font/blackjar.svg#BlackJackRegular') format('svg');
+}
+@font-face {
+    font-family: 'TimelessBold';
+    src: url('../font/timeless-bold.eot');
+    src: url('../font/timeless-bold.eot') format('embedded-opentype'),
+         url('../font/timeless-bold.woff') format('woff'),
+         url('../font/timeless-bold.ttf') format('truetype'),
+         url('../font/timeless-bold.svg#TimelessBold') format('svg');
+}
+@font-face {
+    font-family: 'TimelessRegular';
+    src: url('../font/timeless.eot');
+    src: url('../font/timeless.eot') format('embedded-opentype'),
+         url('../font/timeless.woff') format('woff'),
+         url('../font/timeless.ttf') format('truetype'),
+         url('../font/timeless.svg#TimelessRegular') format('svg');
+}
+
+/*Main Css*/
+
+body{
+	background-color: #f7e4c0;
+	background-image: url('../assets/pattern.png');
+}
+
+.container{
+	width: 1200px;
+	margin: 0 auto;
+}
