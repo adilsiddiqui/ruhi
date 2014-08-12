@@ -33,6 +33,9 @@ body{
 }
 
 .container{
-	width: 1200px;
+	width: 1296px;
+	height: 1000px;
 	margin: 0 auto;
+	background-image: url('../assets/back1.png');
+	background-repeat: repeat-x;
 }
