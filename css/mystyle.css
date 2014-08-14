@@ -34,7 +34,7 @@ body{
 
 .container{
 	width: 1296px;
-	height: 1000px;
+	height: 934px;
 	margin: 0 auto;
 	background-image: url('../assets/back-1.png');
 	background-repeat: repeat-x;
@@ -59,19 +59,93 @@ div.logo{
 	text-align: center;
 	margin-top: 93px;
 	margin-bottom: 42px;
-	text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.39);
+	text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.33);
 }
 
 .content p{
-	margin-top: 17px;
+	margin-top: 12px;
 	font-family: 'TimelessRegular';
 	font-size: 17px;
 	color: #4b3500;
+	letter-spacing: 0.01em;
 }
 
 .content h2{
 	font-family: 'BlackJackRegular';
-	font-size: 23px;
+	font-size: 22px;
 	color: #4b3500;
-	margin-top: 19px;
+	margin-top: 16px;
+}
+
+.content-nav{
+	margin-top: 26px;
+	width: 374px;
+	margin: 0 auto;
+}
+
+.content-nav div{
+	float: left;
+	cursor: pointer;
+}
+
+.content-nav p{
+	font-family: 'BlackJackRegular';
+	color: #6a4d20;
+	font-size: 20px;
+}
+
+.content-nav .range{
+	margin-top: 42px;
+}
+
+.content-nav .cooking{
+	margin-top: 34px;
+	margin-right: -38px;
+	margin-left: -32px;
+}
+
+.content-nav .health{
+	margin-top: 54px;
+}
+
+.content-nav .range p{
+	-webkit-transition:  0.5s;
+	-o-transition:  0.5s;
+	transition:  0.5s;
+	margin-left: -36px;
+	margin-bottom: 8px;
+}
+
+.content-nav .cooking p{
+	-webkit-transition:  0.5s;
+	-o-transition:  0.5s;
+	transition:  0.5s;
+	margin-left: -12px;
+	margin-bottom: 10px;
+}
+
+.content-nav .health p{
+	-webkit-transition:  0.5s;
+	-o-transition:  0.5s;
+	transition:  0.5s;
+	margin-right: -36px;
+	margin-bottom: 10px;
+}
+
+.content-nav .range:hover p{
+	margin-bottom: 2px;
+	color: #4b3500;
+	text-decoration: underline;
+}
+
+.content-nav .cooking:hover p{
+	margin-bottom: 2px;
+	color: #4b3500;
+	text-decoration: underline;
+}
+
+.content-nav .health:hover p{
+	margin-bottom: 2px;
+	color: #4b3500;
+	text-decoration: underline;
 }
