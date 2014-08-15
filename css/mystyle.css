@@ -32,6 +32,10 @@ body{
 	background-image: url('../assets/pattern.png');
 }
 
+.clearfix{
+	clear: both;
+}
+
 .container{
 	width: 1296px;
 	height: 934px;
@@ -81,6 +85,7 @@ div.logo{
 	margin-top: 26px;
 	width: 374px;
 	margin: 0 auto;
+	height: 262px;
 }
 
 .content-nav div{
@@ -148,4 +153,49 @@ div.logo{
 	margin-bottom: 2px;
 	color: #4b3500;
 	text-decoration: underline;
+}
+
+.main-nav{
+
+}
+
+.main-nav ul li{
+	/*float: left;*/
+	display: inline-block;
+	margin-right: 48px;
+}
+
+.main-nav ul li a{
+	display: block;
+	text-decoration: none;
+}
+
+.main-nav ul li a.about{
+	background: url('../assets/buttons.png') no-repeat 0 0;
+	width: 140px;
+	height: 28px;
+}
+
+.main-nav ul li a.food{
+	background: url('../assets/buttons.png') no-repeat 0 -31px;
+	width: 140px;
+	height: 28px;
+}
+
+.main-nav ul li a.gift{
+	background: url('../assets/buttons.png') no-repeat 0 -61px;
+	width: 140px;
+	height: 28px;
+}
+
+.main-nav ul li a.catering{
+	background: url('../assets/buttons.png')  no-repeat 0 -92px;
+	width: 140px;
+	height: 28px;
+}
+
+.main-nav ul li a.find{
+	background: url('../assets/buttons.png') no-repeat 0 -123px;
+	width: 140px;
+	height: 28px;
 }
