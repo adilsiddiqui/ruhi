@@ -36,12 +36,41 @@ body{
 	clear: both;
 }
 
+a{
+	outline: none;
+	border: none;
+}
+
 .container{
 	width: 1296px;
-	height: 934px;
+	height: 1000px;
 	margin: 0 auto;
 	background-image: url('../assets/back-1.png');
 	background-repeat: repeat-x;
+}
+
+.container-about{
+	width: 1296px;
+	height: 1000px;
+	margin: 0 auto;
+	background-image: url('../assets/about-back.png');
+	background-repeat: repeat-x;	
+}
+
+.container-catering{
+	width: 1296px;
+	height: 1000px;
+	margin: 0 auto;
+	background-image: url('../assets/catering-back.png');
+	background-repeat: repeat-x;	
+}
+
+.container-findus{
+	width: 1296px;
+	height: 1000px;
+	margin: 0 auto;
+	background-image: url('../assets/find-back.png');
+	background-repeat: repeat-x;	
 }
 
 div.logo{
@@ -54,9 +83,11 @@ div.logo{
 .content{
 	text-align: center;
 	margin-top: 44px;
+	height: 602px;
+	display: block;
 }
 
-.home h1{
+h1{
 	font-family: 'BlackJackRegular';
 	font-size: 29px;
 	color: #ffd742;
@@ -64,6 +95,16 @@ div.logo{
 	margin-top: 93px;
 	margin-bottom: 42px;
 	text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.33);
+}
+
+.about h1{
+	position: relative;
+	top: -10px;
+}
+
+.catering h1{
+	position: relative;
+	top: -10px;
 }
 
 .content p{
@@ -85,7 +126,7 @@ div.logo{
 	margin-top: 26px;
 	width: 374px;
 	margin: 0 auto;
-	height: 262px;
+	/*height: 262px;*/
 }
 
 .content-nav div{
@@ -156,7 +197,8 @@ div.logo{
 }
 
 .main-nav{
-
+	margin: 0 auto;
+	text-align: center;
 }
 
 .main-nav ul li{
@@ -174,28 +216,79 @@ div.logo{
 	background: url('../assets/buttons.png') no-repeat 0 0;
 	width: 140px;
 	height: 28px;
+	position: relative;
+	left: 40px;
 }
 
 .main-nav ul li a.food{
 	background: url('../assets/buttons.png') no-repeat 0 -31px;
 	width: 140px;
 	height: 28px;
+	position: relative;
+	left: 30px;
 }
 
 .main-nav ul li a.gift{
 	background: url('../assets/buttons.png') no-repeat 0 -61px;
 	width: 140px;
 	height: 28px;
+	position: relative;
+	left: 20px;
 }
 
 .main-nav ul li a.catering{
 	background: url('../assets/buttons.png')  no-repeat 0 -92px;
 	width: 140px;
 	height: 28px;
+	position: relative;
+	left: 10px;
 }
 
 .main-nav ul li a.find{
 	background: url('../assets/buttons.png') no-repeat 0 -123px;
 	width: 140px;
 	height: 28px;
+	position: relative;
+	left: -2px;
+}
+
+.main-nav ul li a:hover:after{
+	content: " ";
+	background: url('../assets/glow.png') no-repeat;
+	position: absolute;
+	display: block;
+	width: 160px;
+	height: 124px;
+	left: 50%;
+	margin-left: -82px;
+	top: -36px;
+}
+
+.footer{
+	margin-top: 48px;
+}
+
+.footer p{
+	font-family: 'TimelessBold';
+	color: #471912;
+	font-size: 14px;
+	text-align: center;
+}
+
+.content .about p{
+	text-align: center;
+	font-family: 'TimelessRegular';
+	font-size: 17px;
+	width: 844px;
+	margin: 0 auto;
+	line-height: 20px;
+}
+
+.content .catering p{
+	text-align: center;
+	font-family: 'TimelessRegular';
+	font-size: 17px;
+	width: 900px;
+	margin: 0 auto;
+	line-height: 20px;
 }
