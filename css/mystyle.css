@@ -43,7 +43,7 @@ body{
 }
 
 .loading p{
-	text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.33);
+	text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.33);
 }
 
 .clearfix{
@@ -466,4 +466,189 @@ p.offer{
 .gift>p{
 	font-size: 20px;
 	margin-top: 200px;
+}
+
+.food{
+	height: 580px;
+}
+
+.food h1{
+	font-size: 24px;
+	color: #4b3500;
+	margin: 0;
+	text-shadow: none;
+}
+
+.food .left{
+	float: left;
+}
+
+.food .right{
+	float: left;
+}
+
+.food .first-page .left{
+	margin-left: 260px;
+	margin-top: 80px;
+}
+
+.food .first-page .right{
+	margin-left: 220px;
+	margin-top: 80px;
+}
+
+.food .second-page .left{
+	margin-left: 240px;
+	margin-top: 36px;
+}
+
+.food .second-page .right{
+	margin-left: 170px;
+	margin-top: 80px;
+}
+
+.food .third-page .right{
+	margin-top: 50px;
+	margin-left: 120px;
+}
+
+.food .third-page .left{
+	margin-left: 240px;
+	margin-top: 60px;
+}
+
+.food .fourth-page .right{
+	margin-top: 90px;
+	margin-left: 180px;
+}
+
+.food .fourth-page .left{
+	margin-left: 240px;
+	margin-top: 60px;
+}
+
+.food .fifth-page .right{
+	margin-top: 45px;
+	margin-left: 200px;
+}
+
+.food .fifth-page .left{
+	margin-left: 240px;
+	margin-top: 40px;
+}
+
+.food .first-page .left h1{
+	margin: 0;
+	text-shadow: none;
+	margin-bottom: 15px;
+}
+
+.food .first-page .left img{
+	margin-bottom: 35px;
+}
+
+.food .first-page .left p{
+	font-size: 18px;
+	color: #4b3500;
+	line-height: 20px;
+}
+
+.food .first-page .right p{
+	font-size: 18px;
+	color: #4b3500;
+	line-height: 23px;
+	text-align: left;
+}
+
+.food .second-page h1{
+	margin-bottom: -20px;
+	margin-top: 35px;
+	text-align: left;
+}
+
+.food .third-page h1{
+	margin-bottom: -20px;
+	margin-top: 35px;
+	text-align: left;
+}
+
+.food .fourth-page h1{
+	margin-bottom: -20px;
+	margin-top: 35px;
+	text-align: left;
+}
+
+.food .fifth-page h1{
+	margin-bottom: -20px;
+	margin-top: 35px;
+	text-align: left;
+}
+
+.food .second-page p{
+	line-height: 22px;
+	text-align: left;
+}
+
+.food .third-page p{
+	line-height: 22px;
+	text-align: left;
+}
+
+.food .fourth-page p{
+	line-height: 22px;
+	text-align: left;
+}
+
+.food .second-page p{
+	line-height: 22px;
+	text-align: left;
+}
+
+.food .fifth-page p{
+	line-height: 22px;
+	text-align: left;
+}
+
+.food .fourth-page h2{
+	font-size: 36px;
+	margin-top: 70px;
+	text-align: left;
+}
+
+.food .second-page p{
+	line-height: 22px;
+	text-align: left;
+}
+
+.food .second-page b{
+	font-family: 'TimelessBold';
+}
+
+.food-nav{
+	margin: 0 auto;
+	width: 560px;
+	/*margin-top: 70px;*/
+}
+
+.food-nav ul li{
+	float: left;
+	border-right: 1px solid #4b3500;
+	padding: 0 20px 0 20px;
+}
+
+.food-nav ul li a{
+	color: #4b3500;
+	text-decoration: none;
+}
+
+.food-nav ul li a:hover{
+	text-decoration: underline;
+}
+
+.first-page, .second-page, .third-page, .fourth-page, .fifth-page{
+	display: none;
+}
+
+.p-active{
+	display: block;
 }

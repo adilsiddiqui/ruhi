@@ -9,6 +9,43 @@
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$('.container-food').hide();
+
+			$('.food-nav a.first').click(function(){
+				$('.food .p-active').fadeOut('medium', function(){
+					$('.p-active').removeClass('p-active');
+					$('.first-page').addClass('p-active');
+					$('.first-page').fadeIn('slow');
+				});
+			});
+
+			$('.food-nav .second').click(function(){
+				$('.food .p-active').fadeOut('medium', function(){
+					$('.p-active').removeClass('p-active');
+					$('.second-page').addClass('p-active');
+					$('.second-page').fadeIn('slow');
+				});
+			});
+			$('.food-nav .third').click(function(){
+				$('.food .p-active').fadeOut('medium', function(){
+					$('.p-active').removeClass('p-active');
+					$('.third-page').addClass('p-active');
+					$('.third-page').fadeIn('slow');
+				});
+			});
+			$('.food-nav .fourth').click(function(){
+				$('.food .p-active').fadeOut('medium', function(){
+					$('.p-active').removeClass('p-active');
+					$('.fourth-page').addClass('p-active');
+					$('.fourth-page').fadeIn('slow');
+				});
+			});
+			$('.food-nav .fifth').click(function(){
+				$('.food .p-active').fadeOut('medium', function(){
+					$('.p-active').removeClass('p-active');
+					$('.fifth-page').addClass('p-active');
+					$('.fifth-page').fadeIn('slow');
+				});
+			});
 		});
 		$(window).load(function(){
 			$('.loading').fadeOut('fast', function(){
@@ -26,8 +63,236 @@
 		<div class="logo"><a href="index.html"><img src="assets/logo.png" alt="Surbhi Logo"></a></div>
 		<div class="content">
 			<div class="food">
-				<p>
-				</p>
+				<div class="first-page p-active">
+					<div class="left">
+						<h1>Tempting Options <br> for 'Nashta'</h1>
+						<img src="assets/laddu.jpg" alt="Laddu">
+						<h1>We prepare the following <br> on orders...</h1>
+						<p>
+							Poha (Served Only for Breakfast) <br>
+							Moong dal bhajia <br>
+							Cutlet <br>
+							Veg Pattice <br>
+							Paneer Dhokla
+						</p>
+					</div>
+					<div class="right">
+						<p>
+							Vada Pav <br>
+							Schezwan Vada Pav <br>
+							Punjabi Samosa <br>
+							Chinese Samosa <br>
+							Pocket Samosa <br>
+							Onion Samosa <br>
+							Samosa Pav <br>
+							Pani Puri (Gol Gappa) <br>
+							Raj Kachori <br>
+							Paneer Roll <br>
+							Sabudana Vada <br>
+							Veg Puff <br>
+							Cheese Tub <br>
+							Saada Dhokla <br>
+							Sandwich Dhokla <br>
+							White Dhokla <br>
+							Patra <br>
+							Khandwi
+						</p>
+					</div>
+				</div>
+				<div class="second-page">
+					<div class="left">
+						<h1>'Kuch Thanda'</h1>
+						<p>
+							Punjabi Lassi <br>
+							Kesar Dry Fruit Lassi <br> 
+							Orange Ice Slush <br>
+							Kala Khatta Ice Slush
+						</p>
+						<h1>‘Kuch Meetha’ for sweet tooth sake <br>
+						and celebrations...</h1>
+						<p>
+							<b>All time favorite...</b> <br>
+							Gulab Jamun <br>
+							Kala Jamun <br>
+							Rasgulla <br>
+							Raj Bhog <br>
+							Rasmalai <br>
+							Jalebi <br>
+							Rabdi <br>
+							Mal pua <br>
+							Motichoor Laddoo <br>
+							Kesar Shrikhand <br>
+							Elaichi Shrikhand
+						</p>
+					</div>
+					<div class="right">
+						<h1>Charmingly sweet <br>
+						and light Bengali Mithai...</h1>
+						<p>
+							Mishti Doi <br>
+							Malai Sandwich <br>
+							Rose Sandwich <br>
+							Orange Sandwich <br>
+							Chocolate Sandwich <br>
+							Malai chamcham <br>
+							Ras kadam
+						</p>
+						<h1>Wholesome mix dry <br>
+						fruit mithais’...</h1>
+						<p>
+							Sugar free Anjeer Pak <br>
+							Sugar free Khajur Pak <br>
+							Chocolate Bite <br>
+							Orange Bite <br>
+							Meva Bite
+						</p>
+					</div>
+				</div>
+				<div class="third-page">
+					<div class="left">
+						<h1>All time favorite  Kaju based mithais’....</h1>
+						<p>
+							Kaju Katri  <br>
+							Kesar Kaju Ktri <br>
+							Anjeer Kaju Katri <br>
+							Gulkand Kaju Katri <br>
+							Chocolate Kaju Katri <br>
+							Mini Kaju Katri <br>
+							Kaju dryfruit roll <br>
+							Colorful Kaju Kamal Bahar
+						</p>
+						<h1>Mithais’ made out of Khoya...</h1>
+						<p>
+							Khoya Barfi <br>
+							Kesar Peda <br>
+							Elaichi Peda <br>
+							Chocolate Roll <br>
+							Khoya swirl <br>
+							Mathura peda <br>
+							Mini Kesar Peda
+						</p>
+					</div>
+					<div class="right">
+						<h1>Milk mithais’...</h1>
+						<p>
+							Milk Cake <br>
+							Malai Barfi <br>
+							Malai Peda <br>
+							Dodhi (Aflatoon) 
+						</p>
+						<h1>Besan delights...</h1>
+						<p>
+							Besan Laddoo <br>
+							Boondi <br>
+							Dry Fruit Soan Papdi <br>
+							Soan Papdi
+						</p>
+						<h1>Mithais’ made with flour...</h1>
+						<p>
+							Balushahi (Makkhan Vada) <br>
+							Pineapple Ice Halva <br>
+							Kesar Ice Halva <br>
+							Maharaja Ice Halva <br>
+							Bombay Ice Halva <br>
+							Badami Halva (Karachi Halva)
+						</p>
+					</div>
+				</div>
+				<div class="fourth-page">
+					<div class="left">
+						<h1>Seasonal Favorites...</h1>
+						<p>
+							Mango Shrikhand <br>
+							Mango Barfi <br>
+							Gajar Halva
+						</p>
+						<h2>Festive Choices ...</h2>
+						<h1>Ganesh Chaturthi Favorite...</h1>
+						<p>Modak</p>
+						<h1>Teej and Rakshabandhan Pick...</h1>
+						<p>Ghevar</p>
+					</div>
+					<div class="right">
+						<h1>Diwali Specials...</h1> <br>
+						<p>
+							Dryfuit Badam Kali <br>
+							(medley of badam, pistaj kaju) <br><br>
+
+							Kesar Vati <br>
+							(assortment of badam, pista and anjeer  <br>
+							on kaju kesar vati) <br><br>
+
+							Dryfruit Triveni katri <br>
+							(three layered katri of kaju,  <br>
+							pista and kesar) <br><br>
+
+							Kaju laddoo <br>
+							(kaju ladoo filled with  <br>
+							badam and pista) <br><br>
+						</p>
+					</div>
+				</div>
+				<div class="fifth-page">
+					<div class="left">
+						<h1>‘Namkeens’ for some <br>
+						crunch to munch...</h1>
+						<p>
+							Fafda <br>
+							Papdi <br>
+							Gathiya <br>
+							Methi Gathiya <br>
+							Teekha Gathiya <br>
+							Makhaniya Gathiya <br><br>
+
+							Chivdas <br>
+							Mix Farsaan <br>
+							Nadiyadi Bhusa <br>
+							Makai Chivda
+							Mahalakshmi Chivda <br>
+							Khatta Mitha <br>
+							Lassun Chivda <br>
+							Poha Chivda <br>
+							Farali Chivda <br>
+							Special Farali Chivda  <br>
+							(added dryfruits)
+						</p>
+					</div>
+					<div class="right">
+						<p>
+							Khara Boondi <br>
+							Nylon Sev <br>
+							Chana Dal <br>
+							Moong Dal <br>
+							Dal Moth <br><br>
+
+							Surti Kachori <br>
+							Mini Samosa <br>
+							Bhajani Chakli <br>
+							Butter Chakli <br>
+							Shakkar Para <br>
+							Seeng Bhajia <br>
+							Phoolwadi <br>
+							Mari Kela Wafer <br>
+							Masala Kela Wafer <br>
+							Kela Wafer <br>
+							Tomato Kela Wafer <br>
+							Aloo Wafer <br>
+							Masala Jali Wafer <br>
+							Namkeen Mathri <br>
+							Bhakarwadi
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+			<div class="food-nav">
+				<ul>
+					<li><a href="javascript:void(0)" class="first">Nashta</a></li>
+					<li><a href="javascript:void(0)" class="second">Kuch Thanda</a></li>
+					<li><a href="javascript:void(0)" class="third">Mithai's</a></li>
+					<li><a href="javascript:void(0)" class="fourth">Festive Choices</a></li>
+					<li><a href="javascript:void(0)" class="fifth">Namkeen</a></li>
+				</ul>
 			</div>
 		</div>
 		<div class="clearfix"></div>
