@@ -9,26 +9,7 @@
 	<script type="text/javascript">
 	$(document).ready(function(){
 		$('.container').hide();
-		setTimeout(function() {
-			$('.slider img').fadeOut('medium', function(){
-				$('.slider img').attr('src', 'assets/2.jpg');
-				$('.slider img').fadeIn('medium', function(){
-					setTimeout(function() {
-					      $('.slider img').fadeOut('medium', function(){
-					      	$('.slider img').attr('src', 'assets/1.jpg');
-					      	$('.slider img').fadeIn('medium', function(){
-					      		setTimeout(function() {
-					      			$('.slider').fadeOut('medium', function(){
-					      				$('.main-content').css('visibility', 'visible').css('opacity', '1').fadeIn('medium');
-					      			});
-								}, 2500);
-					      	});
-					      });
-					}, 2500);
-				});
-			});
 
-		}, 2500);
 
 		$('.slider a').click(function(){
     			$('.slider').fadeOut('medium', function(){
@@ -75,6 +56,27 @@
 		$('.loading').fadeOut('fast', function(){
 			$('.container').fadeIn();
 		});
+		
+		setTimeout(function() {
+			$('.slider img').fadeOut('medium', function(){
+				$('.slider img').attr('src', 'assets/2.jpg');
+				$('.slider img').fadeIn('medium', function(){
+					setTimeout(function() {
+					      $('.slider img').fadeOut('medium', function(){
+					      	$('.slider img').attr('src', 'assets/1.jpg');
+					      	$('.slider img').fadeIn('medium', function(){
+					      		setTimeout(function() {
+					      			$('.slider').fadeOut('medium', function(){
+					      				$('.main-content').css('visibility', 'visible').css('opacity', '1').fadeIn('medium');
+					      			});
+								}, 2500);
+					      	});
+					      });
+					}, 2500);
+				});
+			});
+
+		}, 2500);
 	});
 
 	</script>
