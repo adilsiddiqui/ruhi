@@ -32,6 +32,16 @@ body{
 	background-image: url('../assets/pattern.png');
 }
 
+.loading{
+	font-family: 'BlackJackRegular';
+	color: #4b3500;
+	font-size: 30px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	z-index: 1000;
+}
+
 .clearfix{
 	clear: both;
 }
