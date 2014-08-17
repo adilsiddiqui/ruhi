@@ -107,6 +107,21 @@ h1{
 	top: -10px;
 }
 
+.findus h1{
+	position: relative;
+	top: -10px;
+}
+
+.gift h1{
+	position: relative;
+	top: -10px;
+}
+
+.food h1{
+	position: relative;
+	top: -10px;
+}
+
 .content p{
 	margin-top: 12px;
 	font-family: 'TimelessRegular';
@@ -291,4 +306,109 @@ h1{
 	width: 900px;
 	margin: 0 auto;
 	line-height: 20px;
+}
+
+.content .findus div{
+	width: 260px;
+	float: left;
+	text-align: left;
+	font-family: 'TimelessRegular';
+	margin-left: 14px;
+}
+
+.findus h2{
+	color: #5b4219;
+	font-size: 21px;
+	margin-bottom: 26px;
+}
+
+.findus address{
+	font-family: 'TimelessRegular';
+	font-size: 17px;
+	line-height: 20px;
+	color: #533c16;
+	margin-bottom: 24px;
+}
+
+.findus h3{
+	font-family: 'TimelessRegular';
+	margin-bottom: 24px;
+	color: #533c16;
+	font-size: 17px;
+}
+
+.findus p.number{
+	font-family: 'TimelessBold';
+	margin-bottom: 24px;
+}
+
+.findus p{
+	line-height: 20px;
+}
+
+p.offer{
+	text-align: center;
+	font-size: 19px;
+	margin-top: 80px;
+}
+
+.new-range, .cooking-tips, .health-benefits{
+	height: 338px;
+}
+
+.inactive{
+	display: none;
+}
+
+.active{
+	display: block;
+}
+
+.cooking-tips{
+	text-align: left;
+}
+
+.cooking-tips>p{
+	text-align: center;
+	font-size: 15px;
+	width: 900px;
+	margin: 0 auto;
+	margin-top: -16px;
+	margin-bottom: 8px;
+}
+
+.cooking-tips div{
+	float: left;
+	width: 550px;
+}
+
+.cooking-tips div h2{
+	font-size: 20px;
+}
+
+.cooking-tips div p{
+	font-size: 14px;
+	text-align: left;
+}
+
+.health-benefits p{
+	line-height: 20px;
+	font-size: 16px;
+	width: 920px;
+	margin: 0 auto;
+	margin-top: -8px;
+}
+
+.health-benefits h2{
+	margin-top: 24px;
+}
+
+.main-home{
+	display: none;
+}
+
+.slider{
+	position: absolute;
+	left: 242px;
+	top: 262px;
 }
