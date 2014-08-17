@@ -8,6 +8,34 @@
 	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 	<script type="text/javascript">
 	$(document).ready(function(){
+
+		setTimeout(function() {
+			$('.slider img').fadeOut('medium', function(){
+				$('.slider img').attr('src', 'assets/2.jpg');
+				$('.slider img').fadeIn('medium', function(){
+					setTimeout(function() {
+					      $('.slider img').fadeOut('medium', function(){
+					      	$('.slider img').attr('src', 'assets/1.jpg');
+					      	$('.slider img').fadeIn('medium', function(){
+					      		setTimeout(function() {
+					      			$('.slider').fadeOut('medium', function(){
+					      				$('.main-content').css('visibility', 'visible').css('opacity', '1').fadeIn('medium');
+					      			});
+								}, 2500);
+					      	});
+					      });
+					}, 2500);
+				});
+			});
+		}, 2500);
+
+		$('.slider a').click(function(){
+    			$('.slider').fadeOut('medium', function(){
+    				$('.main-content').css('visibility', 'visible').css('opacity', '1').fadeIn('medium');
+    			});
+		});
+
+
 		$('.content-nav div.range').click(function(){
 			$('.content .active').fadeOut(function(){
 				$('.content .active').addClass('inactive');
@@ -48,92 +76,95 @@
 		<div class="logo"><a href="index.html"><img src="assets/logo.png" alt="Surbhi Logo"></a></div>
 		<div class="content">
 			<div class="slider">
-				<img src="assets/1.jpg" alt="">
+				<a href="javascript:void(0)">Skip</a>
+				<img src="assets/1.jpg" alt="Images">
 			</div>
-			<div class="new-range active">
-				<h1>New Range</h1>
-				<p>
-					We always strive on coming up with what our patrons enjoy and seasonal <br>
-					favorites anttd trending tweaks... For now we have:
-				</p>
-				<h2>Pocket Samosa</h2>
-				<p>
-					A friendly medley of mix vegetable and smiling coconuty freshness 
-				</p>
-				<h2>Cheese Tub</h2>
-				<p>
-					Comes with peasy goodness some chatpati <br>
-					sauce and cheesy yummness
-				</p>
-				<h2>Paneer roll</h2>
-				<p>
-					Savor it with steaming cabbage and sumptuous paneer <br>
-					and crusted sesame seeds to add the crunch
-				</p>
-			</div>
-			<div class="cooking-tips inactive">
-				<h1>Cooking Tips</h1>
-				<p>
-					We want you to relish our snacks and cherish every bite of our sweets that gives you a lingering taste 
-					and a lasting memory of that moment. Hence we have tried to bring to you a simple but savored
-					suggestions and recipe to complement our dishes.
-				</p>
-				<div style="margin-left: 240px; margin-right: 20px; width: 360px;">
-					<h2>A nice and refreshing cup of Indian Tea</h2>
+			<div class="main-content">
+				<div class="new-range active">
+					<h1>New Range</h1>
 					<p>
-						In a pot add 100ml water along with 20gms of sugar, 3gms <br> of tea powder. Place the pot on the burner & bring it to a <br> good boil. <br><br>
- 
-						Once the water starts to boil, add in 150ml of full fat milk <br> (preferably buffalo milk). Bring it to a rolling boil. <br><br>
-
-						Once the milk come to a boil, add a pinch of cardamom <br> powder to the tea. <br><br>
-
-						Simmer for 30 seconds and strain and enjoy your cup of a <br> traditional Indian tea!
-
+						We always strive on coming up with what our patrons enjoy and seasonal <br>
+						favorites anttd trending tweaks... For now we have:
+					</p>
+					<h2>Pocket Samosa</h2>
+					<p>
+						A friendly medley of mix vegetable and smiling coconuty freshness 
+					</p>
+					<h2>Cheese Tub</h2>
+					<p>
+						Comes with peasy goodness some chatpati <br>
+						sauce and cheesy yummness
+					</p>
+					<h2>Paneer roll</h2>
+					<p>
+						Savor it with steaming cabbage and sumptuous paneer <br>
+						and crusted sesame seeds to add the crunch
 					</p>
 				</div>
-				<div>
-					<h2>To enjoy masala milk cold or hot</h2>
+				<div class="cooking-tips inactive">
+					<h1>Cooking Tips</h1>
 					<p>
-						Begin by lightly crushing 5 almonds, 3 cashews, 6 pistachio; add a <br> pinch of saffron, a pinch of cardamompowder and a dash of grated <br> nutmeg. Keep aside. <br><br>
-
-						In a pot add a glass of milk along with 1 1/2 teaspoon sugar and <br> place it on a burner and heat. Once the milk is hot enough, take it off <br> the burner and add the nut mix. <br><br>
-
-						Give it a little swirl and allow it to cool. Once the milk has cooled, <br> refrigerate it overnight. <br><br>
-
-						Blend the milk before serving. Garnish with some almond flake, <br> pistachio flakes and a few strands of saffron. <br>Enjoy it chilled on a summer afternoon or heat it warm for a cozy winter night!
+						We want you to relish our snacks and cherish every bite of our sweets that gives you a lingering taste 
+						and a lasting memory of that moment. Hence we have tried to bring to you a simple but savored
+						suggestions and recipe to complement our dishes.
 					</p>
+					<div style="margin-left: 240px; margin-right: 20px; width: 360px;">
+						<h2>A nice and refreshing cup of Indian Tea</h2>
+						<p>
+							In a pot add 100ml water along with 20gms of sugar, 3gms <br> of tea powder. Place the pot on the burner & bring it to a <br> good boil. <br><br>
+	 
+							Once the water starts to boil, add in 150ml of full fat milk <br> (preferably buffalo milk). Bring it to a rolling boil. <br><br>
+
+							Once the milk come to a boil, add a pinch of cardamom <br> powder to the tea. <br><br>
+
+							Simmer for 30 seconds and strain and enjoy your cup of a <br> traditional Indian tea!
+
+						</p>
+					</div>
+					<div>
+						<h2>To enjoy masala milk cold or hot</h2>
+						<p>
+							Begin by lightly crushing 5 almonds, 3 cashews, 6 pistachio; add a <br> pinch of saffron, a pinch of cardamompowder and a dash of grated <br> nutmeg. Keep aside. <br><br>
+
+							In a pot add a glass of milk along with 1 1/2 teaspoon sugar and <br> place it on a burner and heat. Once the milk is hot enough, take it off <br> the burner and add the nut mix. <br><br>
+
+							Give it a little swirl and allow it to cool. Once the milk has cooled, <br> refrigerate it overnight. <br><br>
+
+							Blend the milk before serving. Garnish with some almond flake, <br> pistachio flakes and a few strands of saffron. <br>Enjoy it chilled on a summer afternoon or heat it warm for a cozy winter night!
+						</p>
+					</div>
 				</div>
-			</div>
-			<div class="health-benefits inactive">
-				<h1>Health Benefits</h1>
-				<p>
-					Mithais’ are no less than a health tonic if enjoyed in right proportions.. Ghee, which ayurveda describes as
-					life-giving nectar, is considered the best lubricant and digestive regulator. It strengthens sense organs, improves memory, intelligence, and vitality. It detoxifies and rejuvenates the system. Wheat or semolina, another key 
-					ingredient in mithai, has the capacity to strengthen all dhatu (seven levels of tissue),
-					improve complexion, and pacify vata and pitta. - timesofindia.com <br><br>
+				<div class="health-benefits inactive">
+					<h1>Health Benefits</h1>
+					<p>
+						Mithais’ are no less than a health tonic if enjoyed in right proportions.. Ghee, which ayurveda describes as
+						life-giving nectar, is considered the best lubricant and digestive regulator. It strengthens sense organs, improves memory, intelligence, and vitality. It detoxifies and rejuvenates the system. Wheat or semolina, another key 
+						ingredient in mithai, has the capacity to strengthen all dhatu (seven levels of tissue),
+						improve complexion, and pacify vata and pitta. - timesofindia.com <br><br>
 
 
-					Research published in the British Journal of Nutrition (Kelly JH, Sabate J.) shows consuming nuts at least  
-					4 times a week showed a 37% reduced risk of coronary heart disease. And suggests to lower your risk of 
-					cardiovascular and coronary heart disease, enjoy a handful of cashews or other nuts at least 4 times a week. 
-					Bengali mithais’ like rasgulla, rasmalai, raj bhog or malai sandwich; which is really cottage cheese but just handled 
-					differently has a lot of benefits. To mention a few, it is a good supply of protein, B complex vitamins and healthy fats, and a reduced risk of breast cancer. It is a great food for Pregnant Women, Strengthens Bones, Prevents Strokes and Controls Anxiety, Improves Digestion and many more benefits. timesofindia.com- bbc.com
-				</p>
-				<h2>So for all you folks with the sweet tooth can now have some guilt free delectable <br>
-				moments with our mithais’.</h2>
-			</div>
-			<div class="content-nav">
-				<div class="range">
-					<p>New Range</p>
-					<img src="assets/range.png" alt="New Range">
+						Research published in the British Journal of Nutrition (Kelly JH, Sabate J.) shows consuming nuts at least  
+						4 times a week showed a 37% reduced risk of coronary heart disease. And suggests to lower your risk of 
+						cardiovascular and coronary heart disease, enjoy a handful of cashews or other nuts at least 4 times a week. 
+						Bengali mithais’ like rasgulla, rasmalai, raj bhog or malai sandwich; which is really cottage cheese but just handled 
+						differently has a lot of benefits. To mention a few, it is a good supply of protein, B complex vitamins and healthy fats, and a reduced risk of breast cancer. It is a great food for Pregnant Women, Strengthens Bones, Prevents Strokes and Controls Anxiety, Improves Digestion and many more benefits. timesofindia.com- bbc.com
+					</p>
+					<h2>So for all you folks with the sweet tooth can now have some guilt free delectable <br>
+					moments with our mithais’.</h2>
 				</div>
-				<div class="cooking">
-					<p>Cooking Tips</p>
-					<img src="assets/cooking.png" alt="Cooking Tips">
-				</div>
-				<div class="health">
-					<p>Health Benefits</p>
-					<img src="assets/health.png" alt="Health Benefits">
+				<div class="content-nav">
+					<div class="range">
+						<p>New Range</p>
+						<img src="assets/range.png" alt="New Range">
+					</div>
+					<div class="cooking">
+						<p>Cooking Tips</p>
+						<img src="assets/cooking.png" alt="Cooking Tips">
+					</div>
+					<div class="health">
+						<p>Health Benefits</p>
+						<img src="assets/health.png" alt="Health Benefits">
+					</div>
 				</div>
 			</div>
 		</div>

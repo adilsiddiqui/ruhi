@@ -73,6 +73,26 @@ a{
 	background-repeat: repeat-x;	
 }
 
+.container-gift{
+	width: 1296px;
+	height: 1000px;
+	margin: 0 auto;
+	background-image: url('../assets/gift-back.png');
+	background-repeat: repeat-x;	
+}
+
+.container-food{
+	width: 1296px;
+	height: 1000px;
+	margin: 0 auto;
+	background-image: url('../assets/food-back.png');
+	background-repeat: repeat-x;	
+}
+
+.container-food .content{
+	height: 652px;
+}
+
 div.logo{
 	width: 112px;
 	height: 161px;
@@ -373,8 +393,8 @@ p.offer{
 	font-size: 15px;
 	width: 900px;
 	margin: 0 auto;
-	margin-top: -16px;
-	margin-bottom: 8px;
+	margin-top: -8px;
+	margin-bottom: 0px;
 }
 
 .cooking-tips div{
@@ -403,12 +423,33 @@ p.offer{
 	margin-top: 24px;
 }
 
-.main-home{
-	display: none;
+.main-content{
+	visibility: hidden;
+	opacity: 0;
 }
 
 .slider{
 	position: absolute;
-	left: 242px;
-	top: 262px;
+	left: 289px;
+	top: 296px;
+}
+
+.slider a{
+	text-decoration: none;
+	font-size: 16px;
+	font-family: 'TimelessRegular';
+	float: right;
+	color: #4b3500;
+	position: relative;
+	top: -20px;
+	left: 8px;
+}
+
+.slider a:hover{
+	text-decoration: underline;
+}
+
+.gift>p{
+	font-size: 20px;
+	margin-top: 200px;
 }
