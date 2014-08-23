@@ -442,10 +442,16 @@ p.offer{
 	opacity: 0;
 }
 
-.slider{
+/*.slider{
 	position: absolute;
 	left: 289px;
 	top: 296px;
+	height: 451px;
+	overflow: hidden;
+}
+
+.slider img{
+	float: left;
 }
 
 .slider a{
@@ -462,6 +468,45 @@ p.offer{
 .slider a:hover{
 	text-decoration: underline;
 }
+*/
+
+/*Slider --------------------------------------------------------------------------*/
+
+#slider {
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  position: absolute;
+  left: 288px;
+  top: 294px;
+}
+
+#slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 451px;
+  list-style: none;
+}
+
+#slider ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  height: 451px;
+  width: 852px;
+}
+
+a.skip{
+	color: #4b3500;
+	float: right;
+	right: 190px;
+	position: relative;
+	margin-top: -6px;
+}
+
 
 .gift>p{
 	font-size: 20px;

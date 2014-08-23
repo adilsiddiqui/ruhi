@@ -10,9 +10,32 @@
 	$(document).ready(function(){
 		$('.container').hide();
 
+		setInterval(function () {
+			moveLeft();
+		}, 2000);
+	  
+		var slideCount = $('#slider ul li').length;
+		var slideWidth = $('#slider ul li').width();
+		var slideHeight = $('#slider ul li').height();
+		var sliderUlWidth = slideCount * slideWidth;
 
-		$('.slider a').click(function(){
-    			$('.slider').fadeOut('medium', function(){
+		$('#slider').css({ width: slideWidth, height: slideHeight });
+		
+		$('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+		
+		$('#slider ul li:last-child').prependTo('#slider ul');
+
+		function moveLeft() {
+		    $('#slider ul').animate({
+		        left: + slideWidth
+		    }, 1000, function () {
+		        $('#slider ul li:last-child').prependTo('#slider ul');
+		        $('#slider ul').css('left', '');
+		    });
+		};
+
+		$('a.skip').click(function(){
+    			$('#slider').fadeOut('medium', function(){
     				$('.main-content').css('visibility', 'visible').css('opacity', '1').fadeIn('medium');
     			});
 		});
@@ -57,26 +80,26 @@
 			$('.container').fadeIn();
 		});
 
-		setTimeout(function() {
-			$('.slider img').fadeOut('medium', function(){
-				$('.slider img').attr('src', 'assets/2.jpg');
-				$('.slider img').fadeIn('medium', function(){
-					setTimeout(function() {
-					      $('.slider img').fadeOut('medium', function(){
-					      	$('.slider img').attr('src', 'assets/1.jpg');
-					      	$('.slider img').fadeIn('medium', function(){
-					      		setTimeout(function() {
-					      			$('.slider').fadeOut('medium', function(){
-					      				$('.main-content').css('visibility', 'visible').css('opacity', '1').fadeIn('medium');
-					      			});
-								}, 2500);
-					      	});
-					      });
-					}, 2500);
-				});
-			});
+		// setTimeout(function() {
+		// 	$('.slider img').fadeOut('medium', function(){
+		// 		$('.slider img').attr('src', 'assets/2.jpg');
+		// 		$('.slider img').fadeIn('medium', function(){
+		// 			setTimeout(function() {
+		// 			      $('.slider img').fadeOut('medium', function(){
+		// 			      	$('.slider img').attr('src', 'assets/1.jpg');
+		// 			      	$('.slider img').fadeIn('medium', function(){
+		// 			      		setTimeout(function() {
+		// 			      			$('.slider').fadeOut('medium', function(){
+		// 			      				$('.main-content').css('visibility', 'visible').css('opacity', '1').fadeIn('medium');
+		// 			      			});
+		// 						}, 2500);
+		// 			      	});
+		// 			      });
+		// 			}, 2500);
+		// 		});
+		// 	});
 
-		}, 2500);
+		// }, 2500);
 	});
 
 	</script>
@@ -89,9 +112,18 @@
 	<div class="container">
 		<div class="logo"><a href="index.html"><img src="assets/logo1.png" alt="Surbhi Logo"></a></div>
 		<div class="content">
-			<div class="slider">
+<!-- 			<div class="slider">
 				<a href="javascript:void(0)">Skip</a>
 				<img src="assets/1.jpg" alt="Images">
+				<img src="assets/2.jpg" alt="Images">
+				<img src="assets/1.jpg" alt="Images">
+			</div> -->
+			<a href="javascript:void(0)" class="skip">Skip</a>
+			<div id="slider">
+			  <ul>
+			    <li><img src="assets/1.jpg" alt="Images"></li>
+			    <li><img src="assets/2.jpg" alt="Images"></li>
+			  </ul>  
 			</div>
 			<div class="main-content">
 				<div class="new-range active">
