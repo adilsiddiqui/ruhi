@@ -56,42 +56,41 @@
 	$(window).load(function(){
 		$('.loading').fadeOut('fast', function(){
 			$('.container').fadeIn();
+			var x=0;
+
+			setInterval(function () {
+				x= x+1;
+				if (x<2) {
+					moveLeft();
+				}
+				else{
+		    			$('#slider').fadeOut('medium', function(){
+		    				$('.main-content').css('visibility', 'visible').css('opacity', '1').fadeIn('medium');
+		    				$('a.skip').hide();
+		    			});
+				}
+			}, 3000);
+		  
+			var slideCount = $('#slider ul li').length;
+			var slideWidth = $('#slider ul li').width();
+			var slideHeight = $('#slider ul li').height();
+			var sliderUlWidth = slideCount * slideWidth;
+
+			$('#slider').css({ width: slideWidth, height: slideHeight });
+			
+			$('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+			
+			$('#slider ul li:last-child').prependTo('#slider ul');
+
+			function moveLeft() {
+			    $('#slider ul').animate({
+			        left: + slideWidth
+			    }, 1000, function () {
+			        $('#slider ul li:last-child').prependTo('#slider ul');
+			        $('#slider ul').css('left', '');
+			    });
+			};
 		});
-		
-		var x=0;
-
-		setInterval(function () {
-			x= x+1;
-			if (x<2) {
-				moveLeft();
-			}
-			else{
-	    			$('#slider').fadeOut('medium', function(){
-	    				$('.main-content').css('visibility', 'visible').css('opacity', '1').fadeIn('medium');
-	    				$('a.skip').hide();
-	    			});
-			}
-		}, 3000);
-	  
-		var slideCount = $('#slider ul li').length;
-		var slideWidth = $('#slider ul li').width();
-		var slideHeight = $('#slider ul li').height();
-		var sliderUlWidth = slideCount * slideWidth;
-
-		$('#slider').css({ width: slideWidth, height: slideHeight });
-		
-		$('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
-		
-		$('#slider ul li:last-child').prependTo('#slider ul');
-
-		function moveLeft() {
-		    $('#slider ul').animate({
-		        left: + slideWidth
-		    }, 1000, function () {
-		        $('#slider ul li:last-child').prependTo('#slider ul');
-		        $('#slider ul').css('left', '');
-		    });
-		};
 
 		// setTimeout(function() {
 		// 	$('.slider img').fadeOut('medium', function(){
