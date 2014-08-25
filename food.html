@@ -32,6 +32,13 @@
 					$('.third-page').fadeIn('slow');
 				});
 			});
+			$('.food-nav .third-2').click(function(){
+				$('.food .p-active').fadeOut('medium', function(){
+					$('.p-active').removeClass('p-active');
+					$('.third-page-2').addClass('p-active');
+					$('.third-page-2').fadeIn('slow');
+				});
+			});
 			$('.food-nav .fourth').click(function(){
 				$('.food .p-active').fadeOut('medium', function(){
 					$('.p-active').removeClass('p-active');
@@ -108,6 +115,22 @@
 							Orange Ice Slush <br>
 							Kala Khatta Ice Slush
 						</p>
+						<br>
+						<br>
+						<img src="assets/thanda1.jpg" alt="Thanda">
+					</div>
+					<div class="right">
+						<img src="assets/thanda2.jpg" alt="Thanda">
+					</div>
+				</div>
+				<div class="third-page">
+					<div class="left">
+						<h1>Seasonal Favorites...</h1>
+						<p>
+							Mango Shrikhand <br>
+							Mango Barfi <br>
+							Gajar Halva
+						</p>
 						<h1>‘Kuch Meetha’ for sweet tooth sake <br>
 						and celebrations...</h1>
 						<p>
@@ -148,7 +171,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="third-page">
+				<div class="third-page-2">
 					<div class="left">
 						<h1>All time favorite  Kaju based mithais’....</h1>
 						<p>
@@ -200,12 +223,6 @@
 				</div>
 				<div class="fourth-page">
 					<div class="left">
-						<h1>Seasonal Favorites...</h1>
-						<p>
-							Mango Shrikhand <br>
-							Mango Barfi <br>
-							Gajar Halva
-						</p>
 						<h2>Festive Choices ...</h2>
 						<h1>Ganesh Chaturthi Favorite...</h1>
 						<p>Modak</p>
@@ -289,7 +306,8 @@
 				<ul>
 					<li><a href="javascript:void(0)" class="first">Nashta</a></li>
 					<li><a href="javascript:void(0)" class="second">Kuch Thanda</a></li>
-					<li><a href="javascript:void(0)" class="third">Mithai's</a></li>
+					<li><a href="javascript:void(0)" class="third">Mithai's One</a></li>
+					<li><a href="javascript:void(0)" class="third-2">Mithai's Two</a></li>
 					<li><a href="javascript:void(0)" class="fourth">Festive Choices</a></li>
 					<li><a href="javascript:void(0)" class="fifth">Namkeen</a></li>
 				</ul>

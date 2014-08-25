@@ -10,9 +10,20 @@
 	$(document).ready(function(){
 		$('.container').hide();
 
+		var x=0;
+
 		setInterval(function () {
-			moveLeft();
-		}, 2000);
+			x= x+1;
+			if (x<2) {
+				moveLeft();
+			}
+			else{
+	    			$('#slider').fadeOut('medium', function(){
+	    				$('.main-content').css('visibility', 'visible').css('opacity', '1').fadeIn('medium');
+	    				$('a.skip').hide();
+	    			});
+			}
+		}, 3000);
 	  
 		var slideCount = $('#slider ul li').length;
 		var slideWidth = $('#slider ul li').width();
@@ -37,6 +48,7 @@
 		$('a.skip').click(function(){
     			$('#slider').fadeOut('medium', function(){
     				$('.main-content').css('visibility', 'visible').css('opacity', '1').fadeIn('medium');
+    				$('a.skip').hide();
     			});
 		});
 

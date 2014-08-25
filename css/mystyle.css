@@ -538,7 +538,7 @@ a.skip{
 }
 
 .food .first-page .right{
-	margin-left: 220px;
+	margin-left: 182px;
 	margin-top: 80px;
 }
 
@@ -548,23 +548,33 @@ a.skip{
 }
 
 .food .second-page .right{
-	margin-left: 170px;
-	margin-top: 80px;
+	margin-left: 90px;
+	margin-top: 170px;
 }
 
 .food .third-page .right{
 	margin-top: 50px;
-	margin-left: 120px;
+	margin-left: 130px;
 }
 
 .food .third-page .left{
+	margin-left: 240px;
+	margin-top: 46px;
+}
+
+.food .third-page-2 .right{
+	margin-top: 50px;
+	margin-left: 94px;
+}
+
+.food .third-page-2 .left{
 	margin-left: 240px;
 	margin-top: 60px;
 }
 
 .food .fourth-page .right{
 	margin-top: 90px;
-	margin-left: 180px;
+	margin-left: 166px;
 }
 
 .food .fourth-page .left{
@@ -574,7 +584,7 @@ a.skip{
 
 .food .fifth-page .right{
 	margin-top: 45px;
-	margin-left: 200px;
+	margin-left: 186px;
 }
 
 .food .fifth-page .left{
@@ -617,6 +627,12 @@ a.skip{
 	text-align: left;
 }
 
+.food .third-page-2 h1{
+	margin-bottom: -20px;
+	margin-top: 35px;
+	text-align: left;
+}
+
 .food .fourth-page h1{
 	margin-bottom: -20px;
 	margin-top: 35px;
@@ -635,6 +651,11 @@ a.skip{
 }
 
 .food .third-page p{
+	line-height: 22px;
+	text-align: left;
+}
+
+.food .third-page-2 p{
 	line-height: 22px;
 	text-align: left;
 }
@@ -671,7 +692,7 @@ a.skip{
 
 .food-nav{
 	margin: 0 auto;
-	width: 560px;
+	width: 730px;
 	/*margin-top: 70px;*/
 }
 
@@ -690,7 +711,7 @@ a.skip{
 	text-decoration: underline;
 }
 
-.first-page, .second-page, .third-page, .fourth-page, .fifth-page{
+.first-page, .second-page, .third-page, .third-page-2, .fourth-page, .fifth-page{
 	display: none;
 }
 
