@@ -719,12 +719,22 @@ a.skip{
 	display: block;
 }
 
-a.find{
+a.page1{
 	color: #4b3500;
 	text-decoration: none;
 	text-transform: uppercase;
 }
 
-a.find:hover{
+a.page1:hover{
+	text-decoration: underline;
+}
+
+a.page2{
+	color: #4b3500;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+a.page2:hover{
 	text-decoration: underline;
 }

@@ -9,6 +9,20 @@
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$('.container-findus').hide();
+			$('a.page1').click(function(){
+				$('.active').fadeOut(function(){
+					$('.active').removeClass('active');
+					$('.p1').addClass('active');
+					$('.p1').fadeIn();
+				});
+			});
+			$('a.page2').click(function(){
+				$('.active').fadeOut(function(){
+					$('.active').removeClass('active');
+					$('.p2').addClass('active');
+					$('.p2').fadeIn();
+				});
+			});
 		});
 		$(window).load(function(){
 			$('.loading').fadeOut('fast', function(){
@@ -27,7 +41,7 @@
 		<div class="content">
 			<div class="findus">
 				<h1>Find Us</h1>
-				<div class="p1">
+				<div class="p1 active">
 					
 					<div style="margin-left: 150px;">
 						<h2>Flagship Store</h2>
@@ -103,9 +117,70 @@
 						</p>
 					</div>
 				</div>
+				<div class="p2 inactive">
+					
+					<div style="margin-left: 150px;">
+						<h2>Flagship Store</h2>
+						<address>
+							2-3, Haridwar House Nagar, <br> Vasai Road, Vasai West,<br> Mumbai
+						</address>
+						<h3>Phone</h3>
+						<p class="number">28711 852 / 2877 9799</p>
+						<h3>Serves</h3>
+						<p>
+							Snacks  <br>
+							Namkeens  <br>
+							Sweets  <br>
+							Beverages
+						</p>
+					</div>
+					<div>
+						<h2>Express Store</h2>
+						<address>
+							9, Madhu Mangal Building, <br> Man Villa Pada Road,<br> Virar East, Mumbai
+						</address>
+						<h3>Phone</h3>
+						<p class="number">9323 726 201</p>
+						<h3>Serves</h3>
+						<p>
+							Selected  <br>
+							Snacks 
+						</p>
+					</div>
+					<div>
+						<h2>Express Store</h2>
+						<address>
+							14, Kapariya House, <br>Ganthan Road, Near Railway <br>Station, Virar West, Mumbai
+						</address>
+						<h3>Phone</h3>
+						<p class="number">9320 003 014</p>
+						<h3>Serves</h3>
+						<p>
+							Selected  <br>
+							Snacks  <br>
+							Beverages <br>
+							Selected Sweets
+						</p>
+					</div>
+					<div>
+						<h2>Express Store</h2>
+						<address>
+							Rajashree Shopping Center, <br>Shakti Nagar CHS Ltd, Near Railway Station,<br> Mira Road East, Mumbai
+						</address>
+						<h3>Phone</h3>
+						<p class="number">9323 977 800</p>
+						<h3>Serves</h3>
+						<p>
+							Selected  <br>
+							Snacks  <br>
+							Beverages <br>
+							Selected Sweets
+						</p>
+					</div>
+				</div>
 			</div>
 			<div class="clearfix"></div>
-			<a href="javascript:void(0)" class="find">Page 1</a> | <a href="javascript:void(0)" class="find">Page 2</a>
+			<a href="javascript:void(0)" class="page1">Page 1</a> | <a href="javascript:void(0)" class="page2">Page 2</a>
 			<p class="offer">We offer free home delivery on orders of Rs.200 and above.</p>
 		</div>
 		<div class="clearfix"></div>
