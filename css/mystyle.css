@@ -343,11 +343,12 @@ h1{
 }
 
 .content .findus div{
-	width: 260px;
+	/*width: 200px;*/
 	float: left;
 	text-align: left;
 	font-family: 'TimelessRegular';
-	margin-left: 14px;
+	margin-left: 24px;
+	height: 418px;
 }
 
 .findus h2{
@@ -383,7 +384,6 @@ h1{
 p.offer{
 	text-align: center;
 	font-size: 19px;
-	margin-top: 80px;
 }
 
 .new-range, .cooking-tips, .health-benefits{
@@ -544,11 +544,11 @@ a.skip{
 
 .food .second-page .left{
 	margin-left: 240px;
-	margin-top: 36px;
+	margin-top: 74px;
 }
 
 .food .second-page .right{
-	margin-left: 90px;
+	margin-left: 140px;
 	margin-top: 170px;
 }
 
@@ -717,4 +717,14 @@ a.skip{
 
 .p-active{
 	display: block;
+}
+
+a.find{
+	color: #4b3500;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+a.find:hover{
+	text-decoration: underline;
 }
