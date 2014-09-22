@@ -10,6 +10,8 @@
 	$(document).ready(function(){
 		$('.container').hide();
 
+		$('.main-nav, .footer').hide();
+
 
 		$('a.skip').click(function(){
     			$('#slider').fadeOut('medium', function(){
@@ -65,7 +67,7 @@
 				}
 				else{
 		    			$('#slider').fadeOut('medium', function(){
-		    				$('.main-content').css('visibility', 'visible').css('opacity', '1').fadeIn('medium');
+		    				$('.main-content, .main-nav, .footer').css('visibility', 'visible').css('opacity', '1').css('display','block').fadeIn('medium');
 		    				$('a.skip').hide();
 		    			});
 				}
