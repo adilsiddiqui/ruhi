@@ -15,7 +15,7 @@
 
 		$('a.skip').click(function(){
     			$('#slider').fadeOut('medium', function(){
-    				$('.main-content').css('visibility', 'visible').css('opacity', '1').fadeIn('medium');
+    				$('.main-content, .main-nav, .footer').css('visibility', 'visible').css('opacity', '1').css('display','block').fadeIn('medium');
     				$('a.skip').hide();
     			});
 		});
