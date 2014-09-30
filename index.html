@@ -62,7 +62,7 @@
 
 			setInterval(function () {
 				x= x+1;
-				if (x<2) {
+				if (x<3) {
 					moveRight();
 				}
 				else{
@@ -84,7 +84,7 @@
 			
 			$('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
 			
-			$('#slider ul li:last-child').prependTo('#slider ul');
+			// $('#slider ul li:last-child').prependTo('#slider ul');
 
 			function moveLeft() {
 			    $('#slider ul').animate({
@@ -148,8 +148,9 @@
 			<a href="javascript:void(0)" class="skip">Skip</a>
 			<div id="slider">
 			  <ul>
-			    <li><img src="assets/1.jpg" alt="Images"></li>
-			    <li><img src="assets/2.jpg" alt="Images"></li>
+			    <li><img src="assets/1.jpg" alt="Image 1"></li>
+			    <li><img src="assets/2.jpg" alt="Image 2"></li>
+			    <li><img src="assets/3.jpg" alt="Image 3"></li>
 			  </ul>  
 			</div>
 			<div class="main-content">
