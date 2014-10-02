@@ -776,6 +776,7 @@ a.page2:hover{
 	float: left;
 	text-align: left;
 	margin-left: 30px;
+	width: 420px;
 }
 
 .container-gift .gtext p{
@@ -786,4 +787,17 @@ a.page2:hover{
 .container-gift .gtext h3{
 	font-size: 20px;
 	font-family: 'TimelessBold';
+}
+
+.container-gift .ginfo{
+	margin-top: 12px;
+	font-family: 'TimelessRegular';
+	font-size: 15px;
+	color: #4b3500;
+	text-align: left;
+	line-height: 20px;	
+	float: left;
+	margin-top: 30px;
+	margin-left: 30px;
+	letter-spacing: 0.01em;
 }
